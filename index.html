@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Card Game!</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="gameContainer flexColumn">
+		<div id="p1Total" class="initStateHide flexColumn">
+			<h4>Player 1 total</h4>
+			<span id="p1TotalOutput"></span>
+
+		</div>
+		<img src="" id="p1Deck" class="deck">
+		<div id="tableCards" class="flexRow">
+		<img src="" id="p1Table" class="initStateHide">
+		<img src="" id="p2Table" class="initStateHide">
+		</div>
+		<img src="" id="p2Deck" class="deck">
+		<div id="p2Total" class="initStateHide flexColumn">
+			<h4>Player 2 total</h4>
+			<span id="p2TotalOutput"></span>
+		</div>
+		<button id="play" class="">Play?</button>
+		<button id="draw" class="initStateHide">Draw</button>
+		<button id="playAgain" class="initStateHide">Play again?</button>
+		<p id="winnerDescription" class="initStateHide"></p>
+		
+		<div id="roundDescription" class="initStateHide">
+			<p id="p1Played"></p>
+			<p id="p2Played"></p>
+			<p id="roundOutcome"></p>
+		</div>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

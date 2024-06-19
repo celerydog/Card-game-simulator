@@ -1,0 +1,86 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gameContainer * {
+  margin: 5px;
+}
+
+button {
+  width: 150px;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+  background: orange;
+  border: 2px solid orangered;
+  border-radius: 5px;
+}
+
+h4 {
+  color:red;
+}
+
+#roundDescription {
+  border: 2px solid darkslategray;
+  background: rgba(211, 211, 211, 0.663);
+  
+}
+
+#winnerDescription {
+  font-size: 50px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* STATES
+/*******************************************/
+
+.hidden {
+  display: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

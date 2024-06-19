@@ -234,8 +234,10 @@ function revealOutcome(p1remaining,p2remaining) {
   document.getElementById('playAgain').classList.remove('hidden')
   if (p1remaining === 0) {
     winnerDescription.innerText = 'PLAYER 2 WINS THE GAME!!!'
+    document.getElementById('p1Deck').classList.add('hidden')
   } else if (p2remaining === 0) {
     winnerDescription.innerText = 'PLAYER 1 WINS THE GAME!!!'
+    document.getElementById('p2Deck').classList.add('hidden')
   }
 }
 
